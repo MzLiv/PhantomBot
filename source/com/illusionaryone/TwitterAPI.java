@@ -169,7 +169,7 @@ public class TwitterAPI {
         }
 
         try {
-            Status status = twitter.updateStatus(statusString.replaceAll("@", "").replaceAll("#", ""));
+            Status status = twitter.updateStatus(statusString);
             com.gmt2001.Console.debug.println("Success");
             return "true";
         } catch (TwitterException ex) {
@@ -191,7 +191,7 @@ public class TwitterAPI {
         }
 
         try {
-            StatusUpdate statusUpdate = new StatusUpdate(statusString.replaceAll("@", "").replaceAll("#", ""));
+            StatusUpdate statusUpdate = new StatusUpdate(statusString);
             statusUpdate.setMedia(new File(filename));
             Status status = twitter.updateStatus(statusUpdate);
             com.gmt2001.Console.debug.println("Success");
