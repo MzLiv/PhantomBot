@@ -192,31 +192,7 @@
             }
         }
 
-        /*
-         * @commandpath shoutout [streamer] - Give a shout out to a streamer.
-         */
-        if (command.equalsIgnoreCase('shoutout')) {
-            if (action === undefined) {
-                $.say($.whisperPrefix(sender) + $.lang.get('followhandler.shoutout.usage', command));
-                return;
-            }
 
-            var streamer = $.user.sanitize(args[0]),
-                    streamerDisplay = $.username.resolve(streamer),
-                    streamerGame = $.getGame(streamer),
-                    streamerURL = 'https://twitch.tv/' + streamer;
-
-            if (streamerGame == null || streamerGame.length === 0) {
-                $.say($.lang.get('followhandler.shoutout.no.game', streamerDisplay, streamerURL));
-                return;
-            }
-
-            if (!$.isOnline(streamer)) {
-                $.say($.lang.get('followhandler.shoutout.offline', streamerDisplay, streamerURL, streamerGame));
-            } else {
-                $.say($.lang.get('followhandler.shoutout.online', streamerDisplay, streamerURL, streamerGame));
-            }
-        }
     });
 
     /*
