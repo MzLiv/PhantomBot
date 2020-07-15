@@ -1,15 +1,15 @@
 {
     "subfolders": {
-        "developerdocs": "Developer Documentation",
+        "setupbot": "Bot Setup and Update",
         "commands": "Commands",
-        "setupbot": "Setup and Update"
+        "moduleguides": "Module Specific Guides",
+        "integrations": "Setup Integrations",
+        "developerdocs": "Developer Documentation"
     },
     "pages": {
-        "youtubesetup": "YouTube Setup",
-        "discordintegrationsetup": "Discord Integration Setup",
+        "faq": "FAQ",
         "twitchembeds": "Enable Twitch embeds",
-        "markdown": "Markdown for Guides",
         "guides": "Guides",
-        "faq": "FAQ"
+        "welcome": "Welcome to PhantomBot"
     }
 }

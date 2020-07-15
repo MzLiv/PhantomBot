@@ -6,6 +6,7 @@
         "centos": "CentOS",
         "ubuntu": "Ubuntu",
         "macos": "macOS",
-        "updatebot": "How To Update"
+        "updatebot": "How To Update",
+        "registerbot": "How and Why to Register Your Bot"
     }
 }

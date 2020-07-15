@@ -2,7 +2,9 @@
     "subfolders": {
     },
     "pages": {
-        "registerchatcommand": "registerChatCommand Function",
-        "sanitize": "sanitize Function"
+        "devintro": "Developer Intro",
+        "codestyle": "Code Style",
+        "devsetup": "Development Environment Setup",
+        "functions": "Javascript Functions"
     }
 }
