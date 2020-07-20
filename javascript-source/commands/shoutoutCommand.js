@@ -18,19 +18,15 @@
 /**
  * This module is to handle shoutout commands for normal shoutouts (so), team/clan members shoutouts ([x]so) and super shoutouts (sso).
  * The module replaces the shoutout functionality previously found in the follower handler.
- * Author: MzLiv
+ * @author: MzLiv
  */
 
 (function() {
     var soToggle = $.getSetIniDbBoolean('shoutoutSettings', 'soToggle', false),
         ssoToggle = $.getSetIniDbBoolean('shoutoutSettings', 'ssoToggle', false),
         ssoSpam = $.getSetIniDbNumber('shoutoutSettings', 'ssoSpam', 5),
-        xsoToggle = $.getSetIniDbBoolean('shoutoutSettings', 'xsoToggle', false),
-        xsoName = $.getSetIniDbString('shoutoutSettings', 'xsoName', 'x'),
-        ysoToggle = $.getSetIniDbBoolean('shoutoutSettings', 'ysoToggle', false),
-        ysoName = $.getSetIniDbString('shoutoutSettings', 'ysoName', 'y'),
-        zsoToggle = $.getSetIniDbBoolean('shoutoutSettings', 'zsoToggle', false),
-        zsoName = $.getSetIniDbString('shoutoutSettings', 'zsoName', 'y');
+        teamSOToggle = $.getSetIniDbBoolean('shoutoutSettings', 'teamSOToggle', false);
+
 
     /*
      * @function updateShoutoutCommandConfig
@@ -45,6 +41,18 @@
         ysoName = $.getIniDbString('shoutoutSettings', 'ysoName', 'y');
         zsoToggle = $.getIniDbBoolean('settings', 'zsoToggle', false);
         zsoName = $.getIniDbString('shoutoutSettings', 'zsoName', 'z');
+    }
+
+    /*
+     * @function doTeamSo team shoutout
+     */
+    function doTeamSo(streamer) {
+        if ($.isOnline(user)) {
+            $.say($.lang.get('shoutoutcommand.teamso.online', ))
+        }
+        else {
+            $.say($.lang.get('shoutoutcommand.teamso.offline', ))
+        }
     }
 
     /*
@@ -113,13 +121,25 @@
                 }
             }
         }
-
-        /*
-         * @commandpath [x]so [streamer] - Give a custom shoutout variant
-         */
-        
-
     })
+
+    /*
+     * @event ircChannelJoin
+     */
+    $.bind('ircChannelJoin', function(event) {
+        var streamer = event.getUser().toLowerCase(),
+            streamerDisplay = $.resolveRank(streamer),
+            lastUserSo = $.getIniDbNumber('greetingCoolDown', user, 0),
+            now = $.systemTime();
+        /*
+         * automatic shoutouts for team members
+         */
+        if ($.twitchteamscache.hasuser(streamer) === true && teamSOToggle === true){
+            doTeamSo(streamerDisplay);
+            return;
+        }
+
+    });
 
     /*
      * @event initReady
@@ -127,9 +147,6 @@
     $.bind('initReady', function () {
         $.registerChatCommand('./commands/shoutoutCommand.js', 'so', 2);
         $.registerChatCommand('./commands/shoutoutCommand.js', 'sso', 2);
-        $.registerChatCommand('./commands/shoutoutCommand.js', xsoName + 'so', 2);
-        $.registerChatCommand('./commands/shoutoutCommand.js', ysoName + 'so', 2);
-        $.registerChatCommand('./commands/shoutoutCommand.js', zsoName + 'so', 2);
     });
 
 })();

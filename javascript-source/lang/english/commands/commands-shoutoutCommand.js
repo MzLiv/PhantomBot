@@ -16,7 +16,7 @@
  */
 
 /**
- * Author: MzLiv
+ * @author MzLiv
  */
 
 $.lang.register('shoutoutcommand.usage', 'Usage: !$1 [streamer] ');
