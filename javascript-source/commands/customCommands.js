@@ -885,6 +885,7 @@
             if ((match = args.match(/^(?:\s(.*))?$/))) {
                 if (match[1]) {
                     temp = match[1].replace(/[^a-zA-Z0-9_@]/g, '');
+                    temp = temp.replace("@", "");
                 } else {
                     temp = event.getSender();
                 }
