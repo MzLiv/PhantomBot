@@ -363,4 +363,5 @@
     });
 
     $.reloadNoticeSettings = reloadNoticeSettings;
+    $.reloadNotices = reloadNotices;
 })();
