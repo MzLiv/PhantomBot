@@ -16,49 +16,53 @@
  */
 
 $.lang.register('adventuresystem.adventure.usage', 'Usage: !adventure [$1].');
-$.lang.register('adventuresystem.alreadyjoined', 'You have already joined the adventure!');
+$.lang.register('adventuresystem.alreadyjoined', 'You have already joined the adventure and are preparing for your quest to a strange land!');
 $.lang.register('adventuresystem.completed', 'The adventure ended! Survivors are: $1.');
 $.lang.register('adventuresystem.completed.no.win', 'The adventure ended! There are no survivors.');
 $.lang.register('adventuresystem.completed.win.total', 'The adventure ended with $1 survivor(s) and $2 death(s).');
-$.lang.register('adventuresystem.join.bettoohigh', 'You can not join with $1, the maximum is $2.');
-$.lang.register('adventuresystem.join.bettoolow', 'You can not join with $1, the minimum is $2.');
-$.lang.register('adventuresystem.join.needpoints', 'You can not join with $1, you only have $2.');
-$.lang.register('adventuresystem.join.notpossible', 'You can not join now.');
+$.lang.register('adventuresystem.join.bettoohigh', 'You cannot join with $1, the maximum is $2.');
+$.lang.register('adventuresystem.join.bettoolow', 'You cannot join with $1, the minimum is $2.');
+$.lang.register('adventuresystem.join.needpoints', 'You cannot join with $1, you only have $2.');
+$.lang.register('adventuresystem.join.notpossible', 'You cannot join now.');
 $.lang.register('adventuresystem.join.success', 'You have joined the adventure with $1!');
-$.lang.register('adventuresystem.loaded', 'Loaded adventure stories (found $1).');
-$.lang.register('adventuresystem.loaded.prefix', 'Loaded $1 adventure stories from $2.');
+$.lang.register('adventuresystem.loaded', 'Loaded adventure locations (found $1).');
+$.lang.register('adventuresystem.loaded.prefix', 'Loaded $1 adventure locations from $2.');
 $.lang.register('adventuresystem.payoutwhisper', 'Adventure completed, $1 + $2 has been added to your balance.');
-$.lang.register('adventuresystem.runstory', 'Starting adventure "$1" with $2 player(s).');
+$.lang.register('adventuresystem.runstory', 'Starting an adventure to "$1" with $2 player(s).');
 $.lang.register('adventuresystem.set.success', 'Set $1 to $2.');
 $.lang.register('adventuresystem.set.usage', 'Usage: !adventure set [settingname] [value].');
-$.lang.register('adventuresystem.start.success', '$1 is trying get a team together for some serious adventure business! Use "!adventure [$2]" to join in!');
+$.lang.register('adventuresystem.start.success', '$1 is trying get a team together for an adventure into a strange land! Use "!adventure [$2]" to join in!');
 $.lang.register('adventuresystem.tamagotchijoined', '$1 is also joining the adventure.');
 $.lang.register('adventuresystem.top5', 'The top 5 adventurers are: $1.');
 $.lang.register('adventuresystem.top5.empty', 'There haven\'t been any adventure winners recorded yet.');
-$.lang.register('adventuresystem.reset', 'The adventure has now cooled off! Use "!adventure [$1]" to start a new adventure!');
+$.lang.register('adventuresystem.reset', 'The adventuring flock has recuperated ! Use "!adventure [$1]" to start a new adventure!');
 
 $.lang.register('adventuresystem.stories.default', 'true');
 
-$.lang.register('adventuresystem.stories.1.title', 'Time Heist');
-$.lang.register('adventuresystem.stories.1.chapter.1', 'Your memory is vague, on the table a small laptop is playing a video: "My name is The Architect. The bank of Karabraxos is the most secure bank in the universe. You will rob the bank of Karabraxos!"');
-$.lang.register('adventuresystem.stories.1.chapter.2', 'Unable to leave their minds blank, (caught) slowly feel their mind being drained as The Teller feeds on their thoughts.');
-$.lang.register('adventuresystem.stories.1.chapter.3', 'We find ourselves back in the room we started in as consciousness of (survivors) slowly fades again, only to wake up in our beds like nothing at all has happened.');
+$.lang.register('adventuresystem.stories.1.title', 'Worthers\' Sweet Shop');
+$.lang.register('adventuresystem.stories.1.chapter.1', 'The flock is hungry for some sweet treats. We set our eyes on the shiny prize of golden Worthers Original from Worthers\' Sweet Shop.');
+$.lang.register('adventuresystem.stories.1.chapter.2', 'Eagle eyed Worthers always protects his stash. (caught) were not lucky enough to escape his eagle eyed watch and were dragged away for a savage beating.');
+$.lang.register('adventuresystem.stories.1.chapter.3', '(survivors) were sneaky and managed to escape the eagle eyes of Worthers. They made of with sweet treats straight out of his stash.');
 
-$.lang.register('adventuresystem.stories.2.title', 'Beartraps');
-$.lang.register('adventuresystem.stories.2.chapter.1', 'Friends! I\'ve got coordinates for a secret stash of bolts, hidden away within the bowels of the elven forest. We should shoe up and give this a go!');
-$.lang.register('adventuresystem.stories.2.chapter.2', 'Look out, bear traps! (caught) got their legs ripped off!');
-$.lang.register('adventuresystem.stories.2.chapter.3', 'Dayum, that was a close call for losing a leg. But you\'ve deserved this (survivors)!');
+$.lang.register('adventuresystem.stories.2.title', 'Frisky\'s Coffee Shop');
+$.lang.register('adventuresystem.stories.2.chapter.1', 'The flock has grown tired and is in need of caffeine. We decided to raid the best beans from the legendary coffee shop owned by the fantastic Frisky.');
+$.lang.register('adventuresystem.stories.2.chapter.2', 'The shop is protected by unicorns. (caught) were spotted and put into a magical trance rendering them unable to escape with the beans.');
+$.lang.register('adventuresystem.stories.2.chapter.3', 'It was a close call but (survivors) managed to escape with the beans right under the noses of Frisky\'s unicorns.');
 
-$.lang.register('adventuresystem.stories.3.title', 'Vampires?!');
-$.lang.register('adventuresystem.stories.3.chapter.1', 'Ah, my dear friends! I may have found the adventure of a lifetime. Namely the house of count Dracula is believed to be the bolts master! I\'m for going now!');
-$.lang.register('adventuresystem.stories.3.chapter.2', 'It\'s him! (caught) got slaughtered violently!');
-$.lang.register('adventuresystem.stories.3.chapter.3', 'That was a close call, I don\'t think I\'ve been bitten. you? Ow well, (survivors), here\'s your share! ~Transforms into a bat and flutters off~');
+$.lang.register('adventuresystem.stories.3.title', 'Swart\'s Braai');
+$.lang.register('adventuresystem.stories.3.chapter.1', 'The flock catches the smell of meat cooking and plans an adventure to steal some steaks from Swart\'s braai.');
+$.lang.register('adventuresystem.stories.3.chapter.2', 'Swart comes out to check on his meat and catches (caught). We haven\'t heard from them since!');
+$.lang.register('adventuresystem.stories.3.chapter.3', '(survivors) sneakily hid in the bushes until Swart had gone inside to get more beer and managed to sneak away with some meat to tuck into later.');
 
-$.lang.register('adventuresystem.stories.4.title', 'Cereal');
-$.lang.register('adventuresystem.stories.4.chapter.1', 'I think we have a much bigger threat on our hands than the cave in... It is half man, half bear, half pig... Don\'t Laugh, I\'M SUPER CEREAL!');
-$.lang.register('adventuresystem.stories.4.chapter.2', '/me As the adventurers work their way through the tunnels they hear a soft noise from behind them...');
-$.lang.register('adventuresystem.stories.4.chapter.3', 'Look out! It\'s ManBearPig! (caught) get dragged off into the darkness.');
-$.lang.register('adventuresystem.stories.4.chapter.4', '(survivors) run away. Let\'s get out of here guys! We can\'t deal with this alone');
+$.lang.register('adventuresystem.stories.4.title', 'Eddquarters');
+$.lang.register('adventuresystem.stories.4.chapter.1', 'The flock is in need of new tech. Word on the wind is that Eddquarters is full of cool toys of the technical variety and a mission is launched to steal some.');
+$.lang.register('adventuresystem.stories.4.chapter.2', 'Eddquarters is protected by lasers! (caught) were not careful enough and got fried.');
+$.lang.register('adventuresystem.stories.4.chapter.3', 'Using all their skill (survivors) manage to avoid the laser and make off with some cool loot!');
+
+$.lang.register('adventuresystem.stories.5.title', 'BTC\'s House');
+$.lang.register('adventuresystem.stories.5.chapter.1', 'The flock is looking for some OP shloot! We know just the place to get some. BTC\'s House!');
+$.lang.register('adventuresystem.stories.5.chapter.2', 'BTC\'s dogs were on the prowl and attacked (caught) retrieving the shloot that they stole.');
+$.lang.register('adventuresystem.stories.5.chapter.3', '(survivors) managed to evade the dogs and make off with some crispy schloot!');
 
 
 /*
